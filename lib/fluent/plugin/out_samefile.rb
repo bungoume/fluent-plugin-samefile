@@ -1,5 +1,3 @@
-require "fluent/plugin/samefile/version"
-
 module Fluent
   class SameFileOutput < Output
     Plugin.register_output('samefile', self)
