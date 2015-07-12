@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Yuri Umezaki"]
   spec.email         = ["bungoume@gmail.com"]
   spec.homepage      = "https://github.com/bungoume/fluent-plugin-samefile"
-  spec.summary       = "Fluentd filter plugin to output same file"
+  spec.summary       = "Fluentd plugin to output same file"
   spec.description   = spec.summary
   spec.license       = "APLv2"
 

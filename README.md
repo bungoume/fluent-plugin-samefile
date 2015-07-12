@@ -1,6 +1,6 @@
 # Fluent-plugin-samefile
 
-[Fluentd](http://fluentd.org) filter plugin to output same file.
+[Fluentd](http://fluentd.org) plugin to output same file.
 
 
 ## Installation
