@@ -24,6 +24,28 @@ $ sudo td-agent-gem install fluent-plugin-samefile
 ```
 
 
+If need log rotation, use logrotate.d.
+
+`/etc/logrotate.d/td-agent_output`
+
+```
+/path/to/logfile.log
+{
+  daily
+  rotate 7
+  compress
+  delaycompress
+  notifempty
+  create 644 td-agent td-agent
+  sharedscripts
+  postrotate
+    pid=/var/run/td-agent/td-agent.pid
+    test -s $pid && kill -USR1 "$(cat $pid)"
+  endscript
+}
+```
+
+
 ## TODO
 
 * patches welcome!
