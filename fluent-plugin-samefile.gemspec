@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = "fluent-plugin-samefile"
-  spec.version       = "0.0.2"
+  spec.version       = "0.0.3"
   spec.authors       = ["Yuri Umezaki"]
   spec.email         = ["bungoume@gmail.com"]
   spec.homepage      = "https://github.com/bungoume/fluent-plugin-samefile"
