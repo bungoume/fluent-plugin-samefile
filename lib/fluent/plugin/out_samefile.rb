@@ -30,7 +30,7 @@ module Fluent
     end
 
     def write(data)
-      File.open(@path, "a", DEFAULT_FILE_PERMISSION) do |f|
+      File.open(@path, "ab", DEFAULT_FILE_PERMISSION) do |f|
         f.write(data)
       end
     end
